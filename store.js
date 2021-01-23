@@ -46,7 +46,7 @@ function buildTaps(beers) {
     myBeer.querySelector("article").dataset.beername = beer.name;
     //4 popultate
     myBeer.querySelector("h2").textContent = beer.name;
-    myBeer.querySelector("img").setAttribute("src", "Images" + beer.image + "-sm.png")
+    myBeer.querySelector("img").setAttribute("src", "Images" + beer.name + ".png")
     /* myTap.querySelector(
       "p"
     ).textContent = `${tap.level} out of ${tap.capacity}`;
@@ -56,5 +56,3 @@ function buildTaps(beers) {
     document.querySelector("#beers").appendChild(myBeer);
   });
 }
-
-copy.querySelector("img").setAttribute("src", "imgs/small/" + dish.image + "-sm.jpg");
